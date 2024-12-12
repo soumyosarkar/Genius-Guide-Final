@@ -66,7 +66,7 @@ function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-x-6"
           >
-            <HeroButton href="#services" variant="primary">
+            <HeroButton href="#" variant="primary">
               Our Services
             </HeroButton>
             <HeroButton href="#contact" variant="secondary">

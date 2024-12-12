@@ -2,12 +2,7 @@
 import FooterLinks from './FooterLinks';
 
 function Footer() {
-  const services = [
-    { text: 'Tax Planning', href: '#services' },
-    { text: 'Financial Advisory', href: '#services' },
-    { text: 'Audit & Assurance', href: '#services' },
-    { text: 'Corporate Services', href: '#services' }
-  ];
+
 
   const quickLinks = [
     { text: 'Services', href: '#services' },
@@ -20,22 +15,24 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
-          <div className='mr-12'>
+          <div className="mr-12">
             <h2 className="text-2xl font-bold mb-4">Genius Guides</h2>
             <p className="text-gray-400 mb-6">
-              Your trusted partner for comprehensive financial
-              and business consulting services.
+              Your trusted partner for comprehensive financial and business
+              consulting services.
             </p>
           </div>
 
           {/* Services */}
-          <FooterLinks title="Services" links={services} />
+          <div className="mr-12">
+            <h2 className="text-2xl font-bold mb-4">Policies</h2>
+            <p className="text-gray-400 mb-6">
+              We don&apos;t provide any kind of refunds for the service provided.
+            </p>
+          </div>
 
           {/* Quick Links */}
           <FooterLinks title="Quick Links" links={quickLinks} />
-
-          
-          
         </div>
 
         {/* Bottom Bar */}
@@ -45,10 +42,16 @@ function Footer() {
               © {new Date().getFullYear()} Genius Guides. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="/privacy" className="text-gray-400 hover:text-white text-sm">
+              <a
+                href="/privacy"
+                className="text-gray-400 hover:text-white text-sm"
+              >
                 Privacy Policy
               </a>
-              <a href="/terms" className="text-gray-400 hover:text-white text-sm">
+              <a
+                href="/terms"
+                className="text-gray-400 hover:text-white text-sm"
+              >
                 Terms of Service
               </a>
             </div>
