@@ -3,7 +3,7 @@ import HeroButton from './HeroButton';
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
+    <section id="home" className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
       {/* Navigation */}
       <nav className="absolute top-0 left-0 w-full py-6 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">

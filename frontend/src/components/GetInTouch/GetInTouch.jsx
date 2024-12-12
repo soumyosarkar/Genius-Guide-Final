@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import EmailForm from './EmailForm';
+;
 
 function GetInTouch() {
   return (
@@ -13,12 +12,16 @@ function GetInTouch() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-          <p className="text-xl text-gray-600">Stay updated with our latest services and offers</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Get in Touch With Genius Guides
+          </h2>
+          <p className="text-xl text-gray-600">
+            Email: <a href="mailto:geniusguides11@gmail.com" className="text-blue-600 hover:text-blue-800">
+              geniusguides11@gmail.com
+            </a>
+          </p>
         </motion.div>
-        <div className="max-w-xl mx-auto">
-          <EmailForm />
-        </div>
+        <div className="max-w-xl mx-auto"></div>
       </div>
     </section>
   );

@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+
 function FooterLinks({ title, links }) {
   return (
-    <div>
+    <div className="px-32">
       <h3 className="text-lg font-semibold text-white mb-4">{title}</h3>
       <ul className="space-y-2">
         {links.map((link, index) => (
@@ -17,5 +19,15 @@ function FooterLinks({ title, links }) {
     </div>
   );
 }
+
+FooterLinks.propTypes = {
+  title: PropTypes.string.isRequired,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired
+    })
+  ).isRequired
+};
 
 export default FooterLinks;

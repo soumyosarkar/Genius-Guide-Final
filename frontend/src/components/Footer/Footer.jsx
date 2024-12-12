@@ -1,4 +1,4 @@
-import SocialLinks from './SocialLinks';
+// import SocialLinks from './SocialLinks';
 import FooterLinks from './FooterLinks';
 
 function Footer() {
@@ -18,9 +18,9 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
-          <div>
+          <div className='mr-12'>
             <h2 className="text-2xl font-bold mb-4">Genius Guides</h2>
             <p className="text-gray-400 mb-6">
               Your trusted partner for comprehensive financial
@@ -34,11 +34,8 @@ function Footer() {
           {/* Quick Links */}
           <FooterLinks title="Quick Links" links={quickLinks} />
 
-          {/* Connect */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
-            <SocialLinks />
-          </div>
+          
+          
         </div>
 
         {/* Bottom Bar */}

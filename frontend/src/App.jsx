@@ -3,7 +3,7 @@ import Hero from './components/Hero/Hero';
 import Services from './components/Services';
 import TrustedPartner from './components/TrustedPartner/TrustedPartner';
 import GetInTouch from './components/GetInTouch/GetInTouch';
-import Contact from './components/Contact';
+
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Services />
         <TrustedPartner />
         <GetInTouch />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>
